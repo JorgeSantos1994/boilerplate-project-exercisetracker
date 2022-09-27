@@ -8,8 +8,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const mongoose = require("mongoose");
-const mySecret = process.env["MONGO_URI"];
-mongoose.connect(mySecret, { useNewUrlParser: true, useUnifiedTopology: true });
+
+mongoose.connect('mongodb+srv://JorgeSantos1994:badjoras@cluster0.mjvv5aq.mongodb.net/test' , { useNewUrlParser: true, useUnifiedTopology: true });
 
 const schema = mongoose.Schema;
 
